@@ -84,13 +84,13 @@ end  % function
 4. **Step 4:** Call solver and get the solution
 
 ```
-[X,ITER,STAT,JAC]=DMR_SOLVER(@EQUA,X0,TOL) [X,ITER,STAT,JAC] = DMR_SOLVER(@EQUA,X0,TOL)  % Call solver
+[X,ITER,STAT,JAC] = DMR_SOLVER(@EQUA,X0,TOL)  % Call solver
 
 %------- Solution
-k=X(1);  
-y=X(2);
-w=X(3);
-z=X(4);
+k = X(1);  % k = 8 
+y = X(2);  % y = 8
+w = X(3);  % w = 1.0472
+z = X(4);  % z = 6.9282
 ```
 
-**Obs:** the Jacobian matrizmatrix (JAC) can be used to analiseanalyze teh the solution behaviourbehavior.
+**Obs:** the Jacobian matrix (JAC) can be used to analyze the solution behavior.

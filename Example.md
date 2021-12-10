@@ -1,6 +1,6 @@
 # DMR-solver
 
-*by Edimar José de Oliveira*
+*by GOPT - Optimization Group of UFJF*
 
 DMR-SOLVER solves the nonlinear system (NLS) with several variables and nonlinear and linear equations, as well. The DMR-SOLVER uses the iterative Newton Raphson Method (NRM) to find the solution in a few iterations.
 The solver should be used through the following syntax:
@@ -31,7 +31,7 @@ k^2\*cos⁡(2\*w)+k\*y\*cos⁡(w) = 0 \
 1. Step 1: Define the initial value of variables.
 
 ```matlab
-k = 5; y = 6; w = 0.1; z = 1;
+k = 5; y = 6; w = 1; z = 1;
 X0(1) = k;
 X0(2) = y;
 X0(3) = w;
@@ -50,16 +50,17 @@ TOL = 0.001;
 function f = EQUA(X)
 
 %------- Variables
-Kk = X(1);  
-Yy = X(2);
-Ww = X(3);
-Zz = X(4);
+
+k  = X(1);
+y  = X(2);
+w  = X(3);
+z  = X(4);
 
 %--------- Equations
-f(1,1) = k*sin(2*w)+y*sin(w)-2*z
-f(2,1) = k*sin(w)-z                                                  
-f(3,1) = k^2*cos(2*w)+k*y*cos(w)        
-f(4,1) = 2*k+y-24
+f(1,1) = k * sin(2*w) + y * sin(w) - 2 * z; 
+f(2,1) = k * sin(w) - z;
+f(3,1) = k^2 * cos(2*w) + k*y*cos(w);
+f(4,1) = 2*k + y - 24;
                                     
 end  % function
 ```

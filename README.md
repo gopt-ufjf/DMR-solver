@@ -1,5 +1,6 @@
 Please, cite the DMR-SOLVER with this bibtex file.
 
+```
 @misc{DMRSOLVER21,
   author = {{GOPT - Optimization Group}},
   title = {{DMR-SOLVER}},
@@ -7,3 +8,4 @@ Please, cite the DMR-SOLVER with this bibtex file.
   version = {1.0.0},
   year = {2021},
 }
+```

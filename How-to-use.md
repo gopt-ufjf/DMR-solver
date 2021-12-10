@@ -3,6 +3,22 @@
 *by GOPT - Optimization Group of UFJF*
 
 DMR-SOLVER solves the nonlinear system (NLS) with several variables and nonlinear and linear equations, as well. The DMR-SOLVER uses the iterative Newton Raphson Method (NRM) to find the solution in a few iterations.
+
+___
+
+If you use this software, please cite it as below.
+
+```
+@misc{DMRSOLVER21,
+  author = {{GOPT - Optimization Group}},
+  title = {{DMR-SOLVER}},
+  url = {https://github.com/gopt-ufjf/DMR-solver},
+  version = {1.0.0},
+  year = {2021},
+}
+````
+
+___
 The solver should be used through the following syntax:
 
 ```matlab
